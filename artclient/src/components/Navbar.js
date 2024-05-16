@@ -17,11 +17,11 @@ function Navbarr (){
     <Navbar.Toggle aria-controls='basic-navbar-nav' style={{ backgroundColor: 'white' }} />
     <Navbar.Collapse id='basic-navbar-nav' >
       <Nav className='me-auto justify-content-end w-100'>
-        <Nav.Link href='/' className='active text-uppercase text-white'>Home</Nav.Link>
-        <Nav.Link href='/profile' className='text-uppercase text-white'>Profile</Nav.Link>
-        <Nav.Link href='/exhibitions' className='text-uppercase text-white'>Exhibitions</Nav.Link>
-        <Nav.Link href='/artist' className='text-uppercase text-white'>Artist</Nav.Link>
-        <Nav.Link href='/aboutus' className='text-uppercase text-white'>About Us</Nav.Link>
+        <Link to='/' className='active text-uppercase text-white'>Home</Link>
+        <Link to='/profile' className='text-uppercase text-white'>Profile</Link>
+        <Link to='/exhibitions' className='text-uppercase text-white'>Exhibitions</Link>
+        <Link to='/artist' className='text-uppercase text-white'>Artist</Link>
+        <Link to='/aboutus' className='text-uppercase text-white'>About Us</Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
