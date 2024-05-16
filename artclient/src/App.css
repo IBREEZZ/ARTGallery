@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.footer-text {
+  font-family: 'Merriweather', serif;
+}
+.navbar {
+  z-index: 1000; /* Adjust the value as needed */
+}
+@media (max-width: 992px) {
+  .navbar-toggler[aria-expanded="true"] + .navbar-collapse .nav-link {
+    color: rgba(0, 0, 0, 0.7) !important;
+    
+  }
+}
+.container.my-5 {
+  color: white;
+  padding: 30px;
+}
+
+.container.my-5 h2{
+  color: #3D3820;
+  margin-top: 1px;
+}
+.container.my-5 h2,
+.container.my-5 p {
+  font-family: 'Playfair Display', serif;
+  text-align: justify;
+}
+.vangogh{
+  width: 400px;
+  height: 500px;
+}
+.edouardmanet{
+  width: 400px;
+  height: 350px;
+}
+
+
+.leonardodavinci{
+  width: 400px;
+  height: 500px;
+}
+.myh1{
+  color: rgba(255, 255, 255, 0.525);
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+.myh2{
+  margin-top: 30px;
+  margin-bottom: 140px;
+  font-size: 90px;
+}
+.myh33{
+  font-family: 'Playfair Display', serif;
+  margin-top: 30px;
+  margin-bottom: 140px;
+  font-size: 70px;
+  color: #3D3820;
+
+}
+.p{
+  font-size: 20px;
+}
+.rectangular-background {
+  width: 50%;
+  height: 400px;
+  background-color: #3D3820;
+ 
+}
+.square-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+ 
+  border: 1px solid rgba(14, 13, 13, 0.7); /* Reduce border width */
+  padding: 10px; /* Add padding to create space between border and image */
+  /* Add any other styling for the square image */
+ 
+}
+
+
+.squaree-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+ 
+  border: 3px solid rgba(255, 255, 255, 0.7); /* Reduce border width */
+  padding: 10px; /* Add padding to create space between border and image */
+  /* Add any other styling for the square image */
+ 
+}
+.artist{
+  color: rgba(255, 255, 255, 0.525);
+  text-align: left;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+.e{
+  text-justify: auto;
+  font-size: medium;
+  font-size: 1.5rem;
+  color: rgb(159, 164, 164);
+}
+
+.error {
+  color: red;
+  font-size: small;
+}
+.input-field {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%; /* Set the width to 100% */
+}
+
+.btn-primary,
+.btn-success {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 8px;
+}
+

@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a0c2f8e.css",
+    "main.js": "/static/js/main.bce4c74f.js",
+    "static/js/453.a0f81d97.chunk.js": "/static/js/453.a0f81d97.chunk.js",
+    "static/media/thestarrynight.png": "/static/media/thestarrynight.0e8ef10db287b185e763.png",
+    "static/media/SignupImg.jpg": "/static/media/SignupImg.86588afbe0784a72c84b.jpg",
+    "static/media/leonardodavinci.jpg": "/static/media/leonardodavinci.1186808d1aec3ddfd7cd.jpg",
+    "static/media/vangogh.jpg": "/static/media/vangogh.24f305b96b168623b1d4.jpg",
+    "static/media/AboutImg.jpg": "/static/media/AboutImg.49b8414772ae0dc390ba.jpg",
+    "static/media/edouardmanet.jpg": "/static/media/edouardmanet.6524317bc57b2aa9473d.jpg",
+    "static/media/home.jpg": "/static/media/home.1d21f1fde69aa2e2203f.jpg",
+    "static/media/monalisa.png": "/static/media/monalisa.ab0a8fbb5f7788d8be79.png",
+    "static/media/rockycoastinthemoonlight.png": "/static/media/rockycoastinthemoonlight.7e176076c04020be2c95.png",
+    "static/media/login.jpg": "/static/media/login.9dc391aaf60805ea6bab.jpg",
+    "static/media/artlogo.PNG": "/static/media/artlogo.517caeea6315e35bef17.PNG",
+    "static/media/exhibition.png": "/static/media/exhibition.a0f1ea04c5b2fc22c987.png",
+    "index.html": "/index.html",
+    "main.2a0c2f8e.css.map": "/static/css/main.2a0c2f8e.css.map",
+    "main.bce4c74f.js.map": "/static/js/main.bce4c74f.js.map",
+    "453.a0f81d97.chunk.js.map": "/static/js/453.a0f81d97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a0c2f8e.css",
+    "static/js/main.bce4c74f.js"
+  ]
+}
