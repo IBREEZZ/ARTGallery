@@ -102,7 +102,7 @@ function AddArt() {
       <div className="container my-10" style={{ marginTop: '400px' }}>
         <form onSubmit={(e) => e.preventDefault()}>
         <div style={{ marginBottom: "30px", textAlign: "left" }}>
-          
+          <h2>{user.name}</h2>
   <label style={{ color: "white", marginBottom: "10px", display: "block" ,fontFamily: "'Playfair Display', serif"}}>Enter Img URL:</label>
   <div style={{ position: "relative", marginBottom: "20px" }}>
     <div style={{ borderBottom: "1px solid white", display: "inline-block", width: "100%" }}>
