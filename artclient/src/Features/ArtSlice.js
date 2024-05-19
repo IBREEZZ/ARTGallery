@@ -3,8 +3,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-
-
+export const getArts = createAsyncThunk("arts/getArts", async () => {
+  try {
+    const response = await axios.get("https://artgallery-server1.onrender.com/arts");
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response.data.error || "Failed to fetch arts.");
+  }
+});
 
 export const addArt = createAsyncThunk("art/addArt", async (artData) => {
   try {
@@ -45,6 +51,21 @@ const artSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+    .addCase(getArts.pending, (state) => {
+      state.isLoading = true;
+    })
+    .addCase(getArts.fulfilled, (state, action) => {
+      state.art = action.payload.reduce((acc, art) => {
+        acc[art._id] = art;
+        return acc;
+      }, {});
+      state.isLoading = false;
+      state.isSuccess = true;
+    })
+    .addCase(getArts.rejected, (state) => {
+      state.isLoading = false;
+      state.isError = true;
+    })
       .addCase(addArt.pending, (state) => {
         state.isLoading = true;
       })
@@ -66,6 +87,18 @@ const artSlice = createSlice({
         state.isSuccess = true;
       })
       .addCase(updateArt.rejected, (state) => {
+        state.isLoading = false;
+        state.isError = true;
+      })
+      .addCase(deleteArt.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(deleteArt.fulfilled, (state, action) => {
+        delete state.art[action.payload];
+        state.isLoading = false;
+        state.isSuccess = true;
+      })
+      .addCase(deleteArt.rejected, (state) => {
         state.isLoading = false;
         state.isError = true;
       });
